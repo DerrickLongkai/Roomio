@@ -1,0 +1,265 @@
+/**/ /*Home.php*/
+body #header{/*style Logo position*/
+    /*place logo in the center of the screen*/
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+body #Nav{/*background color of the navigation*/
+    background-color: rgb(28, 80, 151);
+    padding: 0.1%;
+}
+body #Nav ul{/*style the navigation links*/
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    color: #fbfafa;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body #Nav ul a{
+    color: #fbfafa;
+    text-decoration: none;
+}
+body #Nav ul a:hover{
+    border-bottom: 3px rgb(241, 104, 55) solid;
+}
+/**/
+body #PropertyList{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/*Landlord.php,Tenant.php*/
+body #Nav ul button.nav-btn {
+    background: none;
+    border: none;
+    color: #fbfafa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: inherit;
+    border-bottom: 3px rgb(28, 80, 151) solid;
+}
+body #Nav ul button.nav-btn:hover {
+    border-bottom: 3px rgb(241, 104, 55) solid;
+}
+/*SignIn.html Form*/
+.login-form{
+    background: rgba(204, 202, 238, 0.15);
+    border: 3px solid rgba(255,255,255,0.3);
+    padding: 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(25px);
+    text-align: center;
+    color: black;
+    width: 400px;
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 0px,0px,20px,10px rgba(0,0,0,0.15); 
+}
+.login-title{
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+.input-box{
+    margin: 20px 0;
+    position: relative;
+}
+.input-box input{
+    width: 80%;
+    background: rgba(238, 91, 91, 0.1);
+    border: none;
+    padding: 12px 12px 12px 45px;
+    border-radius: 10px;
+    outline: 3px solid transparent;
+    transition: 0.3s;
+    font-size: 17px;
+    color: rgb(9, 9, 9);
+    font-weight: 600;
+}
+.input-box input::placeholder{
+    color: rgb(122, 120, 120);
+    font-size: 17px;
+    font-weight: 500;
+}
+.input-box input:focus{
+    outline: 3px solid rgba(255,255 255,0.3);
+}
+.input-box input::-ms-reveal{
+    filter: invert(100%);
+}
+.input-box i{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(50%);
+    font-size: 20px;
+    color: black;
+}
+.remember-forgot-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 15px;
+}
+.remember-forgot-box label{
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+.remember-forgot-box input{
+    accent-color: white;
+    cursor: pointer;
+}
+.remember-forgot-box a{
+    color: black;
+    text-decoration: none;
+}
+.remember-forgot-box a:hover{
+    text-decoration: underline;
+}
+.remember-forgot-box1{
+    padding-bottom: 4%;
+}
+.login-btn{
+    width: 100%;
+    padding: 10px 0;
+    background: #2F9CF4;
+    border: none;
+    border-radius: 99px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-btn:hover{
+    background-color: rgb(28, 80, 151);
+}
+.register{
+    margin-top: 15px;
+    font-size: 15px;
+}
+.register a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+/*SignIn.html Form*/
+
+/*Landlord.php #UploadPropertyForm*/
+body #UploadPropertyForm{
+     border: 2px #0056b3 solid;
+     padding: 20px;
+     width:  30%;   
+     margin: auto;
+     margin-top: 2%;
+     display: none;
+}
+body #UploadPropertyForm #submit{
+    background: none;
+    border: none;
+    background-color:  #007BFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: inherit;
+    font-size: 16px;
+    background-color: #007BFF; /* Blue button */
+    color: #fff; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+body #UploadPropertyForm #submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/*Tenant.php uploadTestimonialForm*/
+body #UploadTestimonialForm{
+     border: 2px #0056b3 solid;
+     padding: 20px;
+     width: 26%;   
+     margin: auto;
+     margin-top: 2%;
+    display: none;
+}
+body #UploadTestimonialForm #submit{
+    background: none;
+    border: none;
+    background-color:  #007BFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: inherit;
+    font-size: 16px;
+    background-color: #007BFF; /* Blue button */
+    color: #fff; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+body #UploadTestimonialForm #submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/*Search button*/
+#Search2{
+    align-items: center;
+    margin: auto;
+    background-color: black;
+}
+/* Div3: Search Section */
+#search {
+    background-color: #ffffff; /* White background */
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#searchForm{
+     display: flex;
+     align-items: center;
+}
+#rentalPrice, #bedrooms, #tenancyLength {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-left: 10px; /* Space between dropdowns */
+    background-color: #c6e8f5;
+    transition: box-shadow 0.3s ease;
+   
+}
+#rentalPrice:focus, #bedrooms:focus, #tenancyLength:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+}
+#beds, #length{
+    padding: 2px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-left: 10px; /* Space between dropdowns */
+    background-color: #c6e8f5;
+    transition: box-shadow 0.3s ease;
+   
+}
+#beds:focus, #length:focus{
+    box-shadow: 0 0 10px rgba(141, 191, 244, 0.5); /* Blue glow on focus */
+}
+
+.search-button {
+    padding: 12px 20px;
+    margin-left: 10px; /* Space between input and button */
+    font-size: 16px;
+    background-color: #007BFF; /* Blue button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.search-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+body #UploadTestimonialForm{
+     border: 2px #0056b3 solid;
+     padding: 20px;
+     width: 26%;   
+     margin: auto;
+     margin-top: 2%;
+}

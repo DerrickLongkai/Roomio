@@ -1,0 +1,48 @@
+body #header{
+    margin: auto;
+    text-align: center;
+}
+body #Nav{
+    background-color: rgb(28, 80, 151);
+    padding: 0.1%;
+}
+body #Nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    color: #fbfafa;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body #Nav ul a{
+    color: #fbfafa;
+    text-decoration: none;
+}
+body #Nav ul a:hover{
+    border-bottom: 3px rgb(241, 104, 55) solid;
+}
+body #content{
+    background-color: #dfdcdc;
+    display: flex;
+}
+body #content #article1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: 3px black solid;
+    margin: 5px;
+    padding: 5px;
+}
+body #content h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body #content p{
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body #content #article2{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+}
+

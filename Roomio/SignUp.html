@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title><!--Sign Up page-->
+    <link rel="stylesheet" href="All.css">
+    <!---->
+</head>
+<body>
+    <div id="page">
+        <!--Form Sign Up-->
+        <form action="SignUp.php" class="login-form" method="POST">
+            <img src="images/logo.png" alt="Logo" style="width: 25%; height: auto;">
+            <div id="demo" style.display = 'none'></div>
+            <script>/*handle input errors*/
+                    
+                const params = new URLSearchParams(window.location.search);
+                var result = document.getElementById('demo');
+                    
+                if (params.get('error') === 'fields_empty') {
+                    result.innerHTML = '<p>Sorry, fields can not be blank.<p>'; 
+                    result.style.backgroundColor = 'rgba(237, 62, 50, 1)';
+                    result.style.padding = '1px';
+                    result.style.borderRadius = '10px'   
+                    result.style.display = 'block';   
+                }
+                else if (params.get('error') === 'password_mismatch') {
+                    result.innerHTML = '<p>Sorry, The passwords you entered are different.<p>';   
+                    result.style.backgroundColor = 'rgba(237, 62, 50, 1)';
+                    result.style.padding = '1px';
+                    result.style.borderRadius = '10px'   
+                    result.style.display = 'block';   
+                }
+                else if (params.get('error') === 'existed_user') {
+                    result.innerHTML = '<p>Sorry, The email you entered is already existed.<p>';   
+                    result.style.backgroundColor = 'rgba(237, 62, 50, 1)';
+                    result.style.padding = '1px';
+                    result.style.borderRadius = '10px'   
+                    result.style.display = 'block';   
+                }
+            </script>
+            <!--accept inputs, Firstname,lastname,email,password,-->
+                <h1 class="login-title">Create an account</h1>
+                <div class="input-box">
+                    <i class="bx bxs-user"></i>
+                    <input type="text" placeholder="First Name" name="firstname">
+                </div>
+                <div class="input-box">
+                    <i class="bx bxs-user"></i>
+                    <input type="text" placeholder="Last Name" name="lastname">
+                </div>
+                <div class="input-box">
+                    <i class="bx bxs-user"></i>
+                    <input type="email" placeholder="Email Address" name="email">
+                </div>
+                <div class="input-box">
+                    <i class="bx bxs-lock-alt"></i>
+                    <input type="password" placeholder="Password" name="password">
+                </div>
+                <div class="input-box">
+                    <i class="bx bxs-lock-alt"></i>
+                    <input type="password" placeholder="Confirm Password" name="confirmPassword">
+                </div>
+
+                <div class="remember-forgot-box">
+                    <label for="remember">Please Select your role: 
+                        <input type="radio" name="role" id="tenant" value="tenant">
+                        <label for="tenant">Tenant</label>
+                        <input type="radio" name="role" id="landlord" value="landlord">
+                        <label for="landlord">Landlord</label><br>
+                    </label>
+                  
+                </div>
+                <div class="remember-forgot-box1">
+                    <label for="remember">
+                        <input type="checkbox" id="remember">
+                        I have read and agreed with the Roomio's <a href="#">Terms & Conditions</a>.
+                    </label>
+                    
+                </div>
+
+                <button class="login-btn" type="submit">Sign Up</button>
+            </form>    
+        
+    </div>
+</body>
+</html>
